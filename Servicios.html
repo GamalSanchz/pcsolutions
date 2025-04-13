@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <a href="index.html"><img src="images/isologo_png_new.png" class="logo" alt="Logo PC Solutions"></a>
+  </div>
+  <ul class="menu">
+    <a href="index.html" class="nav-item"> INICIO</a>
+    <a href="Servicios.html" class="nav-item"> SERVICIOS</a>
+    <a href="aboutWe.html" class="nav-item"> NOSOTROS</a>
+    <a href="Contactanos.html" class="nav-item"> CONTACTO</a>
+  </ul>
+</header>
+
+<section class="intro-services">
+  <center>
+    <h1 class="intro-title">Descubre todo lo que podemos hacer por ti</h1>
+    <p class="intro-text">
+      En <strong>PC Solutions</strong> brindamos soluciones integrales en tecnología, mantenimiento y venta de equipos. Nos apasiona ayudarte a mantener tus dispositivos en óptimas condiciones y ofrecerte lo mejor en productos tecnológicos y de oficina.
+    </p>
+  </center>
+</section>
+
+<section class="cards-group">
+  <center><h2 class="cards-title">🧰 Soporte Técnico</h2></center>
+  <div class="cards-section">
+    <div class="card">
+      <div class="face front">
+        <img src="images/repLap.jpg" alt="">
+        <h3>PC / Laptops</h3>
+      </div>
+      <div class="face back">
+        <h3>PC / Laptops</h3>
+        <p>Mantenimiento preventivo y correctivo. Limpieza física, formateo y optimización del sistema.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-laptops')">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+        <img src="images/repPLay.jpg" alt="">
+        <h3>Consolas</h3>
+      </div>
+      <div class="face back">
+        <h3>Consolas</h3>
+        <p>Reparación y mantenimiento de PlayStation, Xbox y más. Revisíon interna y actualización de software.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-consolas')">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+        <img src="images/repImpr.png" alt="">
+        <h3>Impresoras</h3>
+      </div>
+      <div class="face back">
+        <h3>Impresoras</h3>
+        <p>Revisión, limpieza, cambio de tinta o cabezal, y solución de errores en equipos domésticos o empresariales.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-impresoras')">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+        <img src="images/instCam.jpeg" alt="">
+        <h3>Sistemas de Videovigilancia</h3>
+      </div>
+      <div class="face back">
+        <h3>Instalación de Cámaras</h3>
+        <p>Instalación de kits de cámaras de vigilancia. Configuración y mantenimiento incluidos.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-camaras')">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cards-group">
+  <center><h2 class="cards-title">🛒 Ventas de Productos</h2></center>
+  <div class="cards-section">
+
+    <!-- ACCESORIOS -->
+    <div class="card">
+      <div class="face front">
+        <img src="images/perif.jpg" alt="">
+        <h3>Accesorios</h3>
+      </div>
+      <div class="face back">
+        <h3>Accesorios Tecnológicos</h3>
+        <p>Mouse, teclados, cables HDMI, cargadores, audífonos y más a precios accesibles.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-accesorios')">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAPELERÍA -->
+    <div class="card">
+      <div class="face front">
+        <img src="images/paper.jpg" alt="">
+        <h3>Papelería</h3>
+      </div>
+      <div class="face back">
+        <h3>Papelería</h3>
+        <p>Material escolar, de oficina, cuadernos, bolígrafos, carpetas y mucho más.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-papeleria')">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISPOSITIVOS -->
+    <div class="card">
+      <div class="face front">
+        <img src="images/disp.jpg" alt="">
+        <h3>Dispositivos</h3>
+      </div>
+      <div class="face back">
+        <h3>Equipos y Electrónica</h3>
+        <p>Venta de laptops, impresoras, cámaras, sistemas de vigilancia y dispositivos para el hogar.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-dispositivos')">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NUEVA TARJETA: VENTA Y ARMADO DE PCs -->
+    <div class="card">
+      <div class="face front">
+        <img src="images/armapc.png" alt="PC de Escritorio">
+        <h3>Venta y Armado de PCs</h3>
+      </div>
+      <div class="face back">
+        <h3>PCs Armadas</h3>
+        <p>Ofrecemos armado de equipos de escritorio a la medida. Perfecto para gaming, diseño o trabajo profesional.</p>
+        <div class="link">
+          <a href="#" onclick="openModal('modal-pcarmado')">Ver más</a><br>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Módulos para cada tarjeta (sólo ejemplo de consolas, los demás deben replicarse con su info y ID correspondiente) -->
+<div id="modal-laptops" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-laptops')">&times;</span>
+      <h2>Servicio Técnico para Consolas</h2>
+      <p>En <strong>PC Solutions</strong> ofrecemos mantenimiento especializado para laptops, de distintas marcas como <strong>HP</strong>, <strong>Dell</strong>, <strong>Asus</strong>, entre otras.</p>
+      <ul>
+        <li>✅ Limpieza interna y mantenimiento general</li>
+        <li>✅ Cambio de pasta térmica y pads térmicos</li>
+        <li>✅ Mantenimiento de software</li>
+        <li>✅ Instalación de programas</li>
+      </ul>
+      <p>Manejamos piezas originales y compatibles. Contamos con garantía en todos nuestros servicios.</p>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20me%20gustaría%20cotizar%20el%20soporte%20técnico%20para%20mi%20laptop%20o%20PC.%20🛠️💻" target="_blank">
+        💬 Cotizar soporte técnico de Laptop / PC
+      </a>
+      
+      <button class="brands-btn" onclick="openModal('modal-marcas-laptops')">Ver marcas con las que trabajamos</button>
+    </div>
+  </div>
+<div id="modal-consolas" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-consolas')">&times;</span>
+      <h2>Servicio Técnico para Consolas</h2>
+      <p>En <strong>PC Solutions</strong> ofrecemos mantenimiento especializado para consolas de videojuegos como <strong>PlayStation</strong>, <strong>Xbox</strong> y <strong>Nintendo</strong>.</p>
+      <ul>
+        <li>✅ Limpieza interna y ventilación</li>
+        <li>✅ Cambio de pasta térmica y ventiladores</li>
+        <li>✅ Reparación de HDMI, puertos USB y encendido</li>
+        <li>✅ Actualización y formateo de software</li>
+      </ul>
+      <p>Manejamos piezas originales y compatibles. Contamos con garantía en todos nuestros servicios.</p>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20quiero%20cotizar%20reparación%20o%20mantenimiento%20para%20mi%20consola%20🎮%20" target="_blank">
+        💬 Cotizar servicio técnico para consola
+      </a>
+      
+      <button class="brands-btn" onclick="openModal('modal-marcas-consolas')">Ver marcas con las que trabajamos</button>
+    </div>
+  </div>
+
+  
+
+
+  <div id="modal-impresoras" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-impresoras')">&times;</span>
+      <h2>Reparación de Impresoras</h2>
+      <p>Solucionamos fallas en impresoras para hogar y oficina.</p>
+      <ul>
+        <li>✅ Limpieza de cabezales y rodillos</li>
+        <li>✅ Cambio de cartuchos o sistema continuo</li>
+        <li>✅ Ajustes de alineación y conectividad</li>
+        <li>✅ Mantenimiento general</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20necesito%20cotizar%20revisión%20o%20mantenimiento%20de%20una%20impresora%20🖨️" target="_blank">
+        💬 Cotizar servicio
+      </a>
+      
+      <button class="brands-btn" onclick="openModal('modal-marcas-impresoras')">Ver marcas con las que trabajamos</button>
+
+    </div>
+  </div>
+
+  <div id="modal-camaras" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-camaras')">&times;</span>
+      <h2>Instalación de Cámaras de Seguridad</h2>
+      <p>Instalamos sistemas de videovigilancia con configuración profesional.</p>
+      <ul>
+        <li>✅ Cámaras analógicas o IP</li>
+        <li>✅ Grabación en DVR / NVR</li>
+        <li>✅ Vista remota desde tu celular</li>
+        <li>✅ Instalación y mantenimiento técnico</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20quiero%20cotizar%20la%20instalación%20de%20cámaras%20de%20seguridad%20📹🔒" target="_blank">
+        💬 Cotizar instalación de cámaras
+      </a>
+      
+      <button class="brands-btn" onclick="openModal('modal-marcas-camaras')">Ver marcas</button>
+    </div>
+  </div>
+
+  <div id="modal-accesorios" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-accesorios')">&times;</span>
+      <h2>Accesorios Tecnológicos</h2>
+      <p>Contamos con una gran variedad de periféricos y accesorios para tus dispositivos.</p>
+      <ul>
+        <li>✅ Cargadores, audífonos, teclados y mouse</li>
+        <li>✅ Adaptadores, cables y memorias USB</li>
+        <li>✅ Productos nuevos y garantizados</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20me%20interesan%20accesorios%20tecnológicos%20como%20mouse,%20audífonos,%20etc.%20🎧🖱️" target="_blank">
+        💬 Consultar accesorios disponibles
+      </a>
+            <button class="brands-btn" onclick="openModal('modal-marcas-accesorios')">Ver marcas</button>
+
+    </div>
+  </div>
+
+  <div id="modal-papeleria" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-papeleria')">&times;</span>
+      <h2>Material de Papelería</h2>
+      <p>Disponemos de productos escolares y de oficina.</p>
+      <ul>
+        <li>✅ Cuadernos, hojas, carpetas</li>
+        <li>✅ Bolígrafo, lápiz, marcadores y más</li>
+        <li>✅ Material de calidad y económico</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20quiero%20cotizar%20material%20de%20papelería%20📝✂️📦" target="_blank">
+        💬 Consultar productos de papelería
+      </a>
+            <button class="brands-btn" onclick="openModal('modal-marcas-papeleria')">Ver marcas</button>
+    </div>
+  </div>
+
+  <div id="modal-dispositivos" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-dispositivos')">&times;</span>
+      <h2>Venta de Dispositivos</h2>
+      <p>Ofrecemos equipos nuevos y reacondicionados.</p>
+      <ul>
+        <li>✅ Laptops, impresoras y cámaras de seguridad</li>
+        <li>✅ Asesoría para cotización personalizada</li>
+        <li>✅ Equipos garantizados</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20quiero%20información%20sobre%20dispositivos%20tecnológicos%20💻📱🖨️" target="_blank">
+        💬 Cotizar dispositivos disponibles
+      </a>
+            <button class="brands-btn" onclick="openModal('modal-marcas-dispositivos')">Ver marcas</button>
+    </div>
+    
+  </div>
+  <div id="modal-pcarmado" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('modal-pcarmado')">&times;</span>
+      <h2>Venta y Armado de Computadoras</h2>
+      <p>En <strong>PC Solutions</strong> te ayudamos a elegir, cotizar y ensamblar tu PC de escritorio ideal.</p>
+      <ul>
+        <li>✅ Armado personalizado de PC para gaming, oficina o diseño</li>
+        <li>✅ Asesoría según tu presupuesto</li>
+        <li>✅ Venta de partes y accesorios</li>
+        <li>✅ Garantía y soporte post-venta</li>
+      </ul>
+      <a class="whatsapp-button" href="https://wa.me/79540869?text=Hola,%20quiero%20cotizar%20una%20PC%20de%20escritorio%20armada%20🛠️🖥️💡" target="_blank">
+        💬 Cotizar armado de PC personalizada
+      </a>      
+      <br>
+      <button class="brands-btn" onclick="document.getElementById('modal-marcas-pcarmado').style.display='block'">
+        Ver marcas 
+      </button>
+    </div>
+  </div>
+  
+  <div id="modal-marcas-laptops" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-laptops')">&times;</span>
+      <div class="brand-logos">
+        <img src="images/hp_log.png" alt="HP">
+        <img src="images/dell_log.png" alt="Dell">
+        <img src="images/asus_log.png" alt="Asus">
+        <img src="images/acer_log.jpg" alt="Acer">
+        <img src="images/lenovo_log.svg" alt="Lenovo">
+        <img src="images/msi_log.png" alt="MSI">
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+    </div>
+    </div>
+  </div>
+  <div id="modal-marcas-impresoras" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-impresoras')">&times;</span>
+      <div class="brand-logos">
+        <img src="images/canon_log.png" alt="Canon">
+        <img src="images/epson_log.png" alt="Epson">
+        <img src="images/hp_log.png" alt="HP">
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+    </div>
+    </div>
+  </div>
+  <div id="modal-marcas-camaras" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-camaras')">&times;</span>
+      <div class="brand-logos">
+        <img src="images/dahua_log.png" alt="Dahua">
+        <img src="images/Ezviz_Log.png" alt="Ezviz">
+        <img src="images/imou_log.png" alt="Imou">
+        <img src="images/Tp-Link_log.png" alt="TP-Link">
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+    </div>
+    </div>
+  </div>
+  <div id="modal-marcas-accesorios" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-accesorios')">&times;</span>
+      <div class="brand-logos">
+        <img src="images/logitech_log.png" alt="Logitech">
+        <img src="images/JBL_log.png" alt="JBL">
+        <img src="images/xtech_log.jpg" alt="Xtech">
+        <img src="images/kingston_log.png" alt="Kingston">
+        <img src="images/sandisk_log.png" alt="Sandisk">
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+    </div>
+    </div>
+  </div>
+  <div id="modal-marcas-papeleria" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-papeleria')">&times;</span>
+      <h2></h2>
+      <div class="brand-logos">
+        <img src="images/facela_log.png" alt="Facela">
+        <img src="images/studmarj_logo.png" alt="Studmark">
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+    </div>
+    </div>
+  </div>
+  <div id="modal-marcas-consolas" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-consolas')">&times;</span>
+      <h2>Marcas compatibles con consolas</h2>
+      <div class="brand-logos">
+        <img src="images/playstation_log.png" alt="PlayStation">
+        <img src="images/xbox_log.png" alt="Xbox">
+        <img src="images/nintendo_log.png" alt="Nintendo">
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-marcas-dispositivos" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="closeModal('modal-marcas-dispositivos')">&times;</span>
+      <div class="brand-logos">
+        <img src="images/hp_log.png" alt="HP">
+        <img src="images/dell_log.png" alt="Dell">
+        <img src="images/asus_log.png" alt="Asus">
+        <img src="images/acer_log.jpg" alt="Acer">
+        <img src="images/lenovo_log.svg" alt="Lenovo">
+        <img src="images/msi_log.png" alt="MSI">
+        <img src="images/xiaomi_log.png" alt="Xiaomi">
+        <img src="images/canon_log.png" alt="Canon">
+        <img src="images/epson_log.png" alt="Epson">
+        
+      </div>
+      <div> <h2> Y muchas más</h2></div>
+      
+    </div>
+    
+  </div>
+  <div id="modal-marcas-pcarmado" class="brand-modal">
+    <div class="brand-modal-content">
+      <span class="close-btn" onclick="document.getElementById('modal-marcas-pcarmado').style.display='none'">&times;</span>
+      <h2>Marcas para Ensamblaje de PCs</h2>
+      <div class="brand-category">
+        <h3>Componentes y Hardware</h3>
+        <div class="brand-logos">
+          <img src="images/kingston_log.png" alt="Kingston">
+          <img src="images/MSI_Log.png" alt="MSI">
+          <img src="images/asus_log.png" alt="Asus">
+          <img src="images/AMD_Ryzen_log.png" alt="AMD">
+          <img src="images/intel.svg" alt="Intel">
+        </div>
+      </div>
+      <div style="margin-top: 1rem;"><h3>Y muchas más...</h3></div>
+    </div>
+  </div>
+  
+
+<footer>
+  <center><section class="footer">
+   <a href="Contactanos.html">© 2025 PC Solutions / GAMMAR SOLUTIONS S.A.S. DE C.V.</a>
+  </section></center>
+</footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
