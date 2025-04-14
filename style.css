@@ -789,16 +789,28 @@ body {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.footer{
-  background-color: #06146575;
-  color: #fff;
+.footer {
+  background-color: #012a45;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  padding: 2rem 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  font: poppins sans-serif;
+  border-top: 1px solid #00aaff33;
+  box-shadow: 0 -2px 8px rgba(0, 170, 255, 0.2);
 }
+
+.footer a {
+  color: #00cfff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00cfff;
+}
+
 /* ======= LINKTREE STYLE ======= */
 body.linktree-page {
   background-color: #0a0b0b;
