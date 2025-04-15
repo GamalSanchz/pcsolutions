@@ -415,7 +415,7 @@ a {
 
 .intro-services {
   padding: 4rem 2rem 2rem;
-  background: #0a0b0b;
+  background: #012a45;
   text-align: center;
 }
 
@@ -696,7 +696,7 @@ a {
 }
 
 .comprasal-banner {
-  background-color: transparent;
+  background-color: #012a45;
   text-align: center;
   padding: 4rem 2rem;
   color : white;
@@ -802,7 +802,7 @@ a {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   border-top: 1px solid #00aaff33;
-  box-shadow: 0 -2px 8px rgba(0, 170, 255, 0.2);
+  box-shadow: #00aaff33;
 }
 
 .footer a {
@@ -893,7 +893,7 @@ body.linktree-page {
 .contact-card {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #012a45;
+  background: #149af4;
   color: white;
   font-weight: bold;
   text-decoration: none;
