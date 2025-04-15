@@ -63,10 +63,10 @@ html {
   align-items: center;
   justify-content: flex-start;
   flex: 100px 10px 300px;
-  animation: fadeInUp 1s ease-in-out forwards;
+  animation: none !important;
   animation-delay: 0.3s;
-  opacity: 0;
-}
+  opacity: 1 !important;
+};
 
 .logo {
   height: 90px;
@@ -605,7 +605,7 @@ a {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: auto;
-  background-color: linear-gradient(to bottom, #0a0b0b, #012a45)  ;
+  background-color: transparent  ;
 }
 
 .nosotros-title {
@@ -633,23 +633,30 @@ a {
 .valores {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  margin-bottom: -3.7rem;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1100px;
 }
 
 .valor-card {
-  background-color: transparent;
+  background: rgba(1, 42, 69, 0.85); /* azul oscuro con opacidad */
   padding: 1.5rem;
   border-radius: 10px;
-  width: 220px;
+  width: 250px;
   text-align: center;
-  box-shadow: 0 0 10px #00aaff40;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: scale(1.05);
 }
 
 .valor-card h4 {
   margin-bottom: 1rem;
   color: #00aaff;
+  font-size: 1.2rem;
 }
 
 .valor-card p {
@@ -696,7 +703,7 @@ a {
 }
 
 .comprasal-banner {
-  background-color: linear-gradient(to bottom, #0a0b0b, #012a45);
+  background-color: transparent;
   text-align: center;
   padding: 4rem 2rem;
   color : white;
@@ -726,8 +733,16 @@ a {
   .valores {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .valor-card {
+    width: 90%;
+    max-width: 320px;
   }
 }
+
 .comprasal-banner {
   background-color: #012a45;
   padding: 3rem 2rem;
@@ -1068,12 +1083,8 @@ body.linktree-page {
       transform: translateY(0);
     }
   }  
-  .valor-card {
-    background: rgba(1, 42, 69, 0.85); /* azul con opacidad */
-    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
-  }
   .section-transition {
     height: 50px;
-    background: linear-gradient(to bottom, #012a45, #0a0b0b);
+    background: linear-gradient(to bottom, #012a45, #012a45);
   }
   
