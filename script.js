@@ -33,3 +33,28 @@ document.querySelectorAll('#mainMenu .nav-item').forEach(item => {
     menu.classList.remove('show');
   });
 });
+// Cierra el menú si está abierto cuando se abre una modal
+function closeHamburgerMenu() {
+  const menu = document.querySelector('.menu');
+  if (menu.classList.contains('show')) {
+    menu.classList.remove('show');
+  }
+}
+
+// Cuando abres una modal:
+function openModal(id) {
+  closeHamburgerMenu(); // <- Cierra el menú antes de abrir modal
+  document.getElementById(id).style.display = 'block';
+}
+
+// O si ya usas funciones separadas:
+document.querySelectorAll('.modal-button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    closeHamburgerMenu();
+  });
+});
+document.querySelectorAll('.menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.menu').classList.remove('show');
+  });
+});
