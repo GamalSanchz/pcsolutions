@@ -63,10 +63,10 @@ html {
   align-items: center;
   justify-content: flex-start;
   flex: 100px 10px 300px;
-  animation: none !important;
+  animation: fadeInUp 1s ease-in-out forwards;
   animation-delay: 0.3s;
-  opacity: 1 !important;
-};
+  opacity: 0;
+}
 
 .logo {
   height: 90px;
@@ -116,7 +116,7 @@ a {
   padding: 5rem 4rem;
   gap: 3rem;
   flex-wrap: wrap;
-  background: transparent;
+  background: linear-gradient(to bottom, #0b0f1c, #0a0b0b);
 }
 
 .hero-content {
@@ -311,7 +311,7 @@ a {
   justify-content: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background: transparent;
+  background: linear-gradient(to bottom, #0a0b0b, #0c0c0c);
 }
 
 /* Tarjetas */
@@ -415,7 +415,7 @@ a {
 
 .intro-services {
   padding: 4rem 2rem 2rem;
-  background: transparent;
+  background: #0a0b0b;
   text-align: center;
 }
 
@@ -633,30 +633,23 @@ a {
 .valores {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 2rem;
-  margin: 3rem auto;
-  max-width: 1100px;
+  justify-content: center;
+  margin-bottom: -3.7rem;
 }
 
 .valor-card {
-  background: rgba(1, 42, 69, 0.85); /* azul oscuro con opacidad */
+  background-color: transparent;
   padding: 1.5rem;
   border-radius: 10px;
-  width: 250px;
+  width: 220px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.valor-card:hover {
-  transform: scale(1.05);
+  box-shadow: 0 0 10px #00aaff40;
 }
 
 .valor-card h4 {
   margin-bottom: 1rem;
   color: #00aaff;
-  font-size: 1.2rem;
 }
 
 .valor-card p {
@@ -733,16 +726,9 @@ a {
   .valores {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
-
-  .valor-card {
-    width: 90%;
-    max-width: 320px;
+    margin-bottom: -4.5rem
   }
 }
-
 .comprasal-banner {
   background-color: #012a45;
   padding: 3rem 2rem;
@@ -1083,8 +1069,12 @@ body.linktree-page {
       transform: translateY(0);
     }
   }  
+  .valor-card {
+    background: rgba(1, 42, 69, 0.85); /* azul con opacidad */
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+  }
   .section-transition {
-    height: 50px;
+    height: 0px;
     background: linear-gradient(to bottom, #012a45, #012a45);
   }
   
