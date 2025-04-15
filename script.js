@@ -1,23 +1,3 @@
-// Abre el modal
-function openModal(id) {
-  document.getElementById(id).style.display = 'block';
-}
-
-// Cierra el modal
-function closeModal(id) {
-  document.getElementById(id).style.display = 'none';
-}
-
-// Cierra al hacer clic fuera del contenido del modal
-window.onclick = function(event) {
-  const modals = document.querySelectorAll('.modal, .brand-modal'); // ✅ Incluye ambas clases
-  modals.forEach(modal => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-}
-/// Script para menú hamburguesa
 document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("mainMenu");
@@ -27,13 +7,32 @@ document.addEventListener("DOMContentLoaded", function () {
       menu.classList.toggle("show");
     });
   }
-});
-document.querySelectorAll('#mainMenu .nav-item').forEach(item => {
-  item.addEventListener('click', () => {
-    menu.classList.remove('show');
+
+  // Cerrar menú al hacer clic en links
+  document.querySelectorAll('#mainMenu .nav-item, .menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('show');
+    });
+  });
+
+  // Cierra al hacer clic fuera del contenido del modal
+  window.onclick = function (event) {
+    const modals = document.querySelectorAll('.modal, .brand-modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  };
+
+  // Botones que abren modales
+  document.querySelectorAll('.modal-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      closeHamburgerMenu();
+    });
   });
 });
-// Cierra el menú si está abierto cuando se abre una modal
+
 function closeHamburgerMenu() {
   const menu = document.querySelector('.menu');
   if (menu.classList.contains('show')) {
@@ -41,20 +40,17 @@ function closeHamburgerMenu() {
   }
 }
 
-// Cuando abres una modal:
 function openModal(id) {
-  closeHamburgerMenu(); // <- Cierra el menú antes de abrir modal
-  document.getElementById(id).style.display = 'block';
+  closeHamburgerMenu(); // ← Cierra el menú
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = 'block';
+  }
 }
 
-// O si ya usas funciones separadas:
-document.querySelectorAll('.modal-button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    closeHamburgerMenu();
-  });
-});
-document.querySelectorAll('.menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.menu').classList.remove('show');
-  });
-});
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = 'none';
+  }
+}
