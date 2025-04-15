@@ -311,7 +311,7 @@ a {
   justify-content: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #0a0b0b, #0c0c0c);
+  background: #012a45 !important;
 }
 
 /* Tarjetas */
