@@ -116,7 +116,7 @@ a {
   padding: 5rem 4rem;
   gap: 3rem;
   flex-wrap: wrap;
-  background: linear-gradient(to bottom, #0b0f1c, #0a0b0b);
+  background: transparent;
 }
 
 .hero-content {
@@ -311,7 +311,7 @@ a {
   justify-content: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #0a0b0b, #0c0c0c);
+  background: transparent;
 }
 
 /* Tarjetas */
@@ -415,7 +415,7 @@ a {
 
 .intro-services {
   padding: 4rem 2rem 2rem;
-  background: #0a0b0b;
+  background: transparent;
   text-align: center;
 }
 
