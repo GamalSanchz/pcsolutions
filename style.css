@@ -14,7 +14,7 @@ html, body {
 
 
 body {
-  background: linear-gradient(to bottom, #0a0b0b, #012a45);
+  background: #012a45 !important;
   font-family: 'Poppins', sans-serif;
   padding-top: 0px;
   color: white;
@@ -116,7 +116,7 @@ a {
   padding: 5rem 4rem;
   gap: 3rem;
   flex-wrap: wrap;
-  background: linear-gradient(to bottom, #0b0f1c, #0a0b0b);
+  background: #012a45 !important;
 }
 
 .hero-content {
@@ -605,7 +605,8 @@ a {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: auto;
-  background-color: transparent  ;
+  background-color: #012a45 !important;
+  background-image: none !important;
 }
 
 .nosotros-title {
@@ -1075,6 +1076,6 @@ body.linktree-page {
   }
   .section-transition {
     height: 0px;
-    background: linear-gradient(to bottom, #012a45, #012a45);
+    background: #012a45 !important;
   }
   
