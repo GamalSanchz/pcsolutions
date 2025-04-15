@@ -5,15 +5,20 @@
   box-sizing: border-box;
   list-style: none;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
 
 body {
   background: linear-gradient(to bottom, #0a0b0b, #012a45);
-
   font-family: 'Poppins', sans-serif;
-  padding-top: 20px;
+  padding-top: 0px;
   color: white;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -32,21 +37,26 @@ html {
 
 /* CABECERA */
 .header {
-  position: relative;
-  margin: 0 auto;
-  width: 98%;
-  padding: 0 20px;
-  background: linear-gradient(90deg, #002fff, #00aaff);
-  border-bottom: 2px solid white;
-  box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  animation: fadeInUp 1s ease-in-out forwards;
-  opacity: 0;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    background: linear-gradient(90deg, #002fff, #00aaff);
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    animation: slideDownFade 0.8s ease-out forwards;
+  }
+  
+
 
 .logo-container {
   display: flex;
@@ -591,13 +601,6 @@ a {
       max-height: 50px;
   }
 }
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #0a0b0b;
-  color: #fff;
-}
-
 .nosotros-container {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -911,3 +914,154 @@ body.linktree-page {
     padding: 1rem 1.2rem;
   }
 }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    background: linear-gradient(180deg, #002fff, #00aaff);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 9999;
+  }
+  
+  .menu.show {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 10px;
+  }
+  
+  .hamburger span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    border-radius: 2px;
+    display: block;
+  }
+  
+ @media (min-width: 769px) {
+  .menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    padding: 0;
+    animation: none;
+    gap: 3rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+  
+    .menu.show {
+      display: flex !important;
+    }
+    @keyframes slideDownFade {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px;
+      background: linear-gradient(90deg, #002fff, #00aaff);
+      border-bottom: 2px solid white;
+      box-shadow: 0 0 25px rgba(0, 170, 255, 0.4);
+      border-radius: 0 0 px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      animation: slideDownFade 0.8s ease-out forwards;
+    }
+  
+    .logo-container {
+      margin-left: 10px;
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-item {
+    padding: 10px;
+  }
+
+
+  .header {
+    z-index: 9999;
+    position: relative;
+  }
+  @keyframes slideDownFade {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
