@@ -935,6 +935,7 @@ body.linktree-page {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0;;
   }
 
   .menu-toggle {
@@ -953,7 +954,7 @@ body.linktree-page {
     border-radius: 0 0 20px 20px;
     text-align: center;
     padding: 1rem 0;
-    z-index: 9999;
+    z-index: 999;
   }
   
   .menu.show {
@@ -1052,7 +1053,7 @@ body.linktree-page {
 
 
   .header {
-    z-index: 9999;
+    z-index: 999;
     position: relative;
   }
   @keyframes slideDownFade {
