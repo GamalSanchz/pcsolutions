@@ -10,18 +10,30 @@
 </head>
 <body>
 
-  <!-- CABECERA -->
   <header class="header">
     <div class="logo-container">
-      <img src="images/isologo_png_new.png" class="logo" alt="Logo PC Solutions" />
+      <a href="index.html">
+        <img src="images/isologo_png_new.png" class="logo" alt="Logo PC Solutions">
+      </a>
     </div>
-    <ul class="menu">
-      <li class="nav-item"><a href="index.html">INICIO</a></li>
-      <li class="nav-item"><a href="Servicios.html">SERVICIOS</a></li>
-      <li class="nav-item"><a href="aboutWe.html">NOSOTROS</a></li>
-      <li class="nav-item"><a href="Contactanos.html">CONTACTO</a></li>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú principal -->
+    <ul class="menu" id="mainMenu">
+      <li><a href="index.html" class="nav-item">INICIO</a></li>
+      <li><a href="Servicios.html" class="nav-item">SERVICIOS</a></li>
+      <li><a href="aboutWe.html" class="nav-item">NOSOTROS</a></li>
+      <li><a href="Contactanos.html" class="nav-item">CONTACTO</a></li>
     </ul>
   </header>
+  
+  
 
   <!-- SECCIÓN PRINCIPAL -->
   <section class="hero-section">
@@ -47,6 +59,6 @@
      <a href="Contactanos.html">© 2025 PC Solutions / GAMMAR SOLUTIONS S.A.S. DE C.V.</a>
     </section></center>
   </footer>
-
+  <script defer src="script.js"></script>
 </body>
 </html>
